@@ -19,7 +19,7 @@ export function About() {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {highlights.map((item, i) => {
-            const Icon = icons[i % icons.length];
+            const Icon = icons[i % icons.length]!;
             return (
               <Reveal key={item.label} delay={i * 80}>
                 <div className="surface-card group h-full rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40">
