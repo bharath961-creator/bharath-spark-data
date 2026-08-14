@@ -113,11 +113,12 @@ export type Certificate = {
 };
 
 export const certificates: Certificate[] = [
-  { name: "Data Analytics Essentials", issuer: "Cisco Networking Academy" },
-  { name: "Data Analytics Job Simulation", issuer: "Deloitte" },
-  { name: "SQL", issuer: "Scaler" },
-  { name: "Microsoft Excel", issuer: "Simplilearn / SkillUp" },
-  { name: "Cloud Computing", issuer: "NPTEL" },
+  { name: "Data Analytics Essentials", issuer: "Cisco Networking Academy", url: "https://drive.google.com/file/d/1eRr9PXA5s5wAeS9eNK7-Wn8Sx-cZdo7p/view?usp=drivesdk" },
+  { name: "Data Analytics Job Simulation", issuer: "Deloitte", url: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_695885c539ff7eaad955f779_1778075409749_completion_certificate.pdf?raw=1" },
+  { name: "SQL", issuer: "Scaler", url: "https://drive.google.com/file/d/1JOSd8fc1btl-ajAUX5yJKzYmxDCbCCC0/view?usp=drivesdk" },
+  { name: "Microsoft Excel", issuer: "Simplilearn / SkillUp", url: "https://drive.google.com/file/d/14Rb0qvYi7kFzE33ZcwBXDRyGyDmdbsmJ/view?usp=drivesdk" },
+  { name: "Cloud Computing", issuer: "NPTEL", url: "https://drive.google.com/file/d/1LcufjESGmE_BJCosgogPaTfTq7096uBu/view?usp=drivesdk" },
+  { name: "Gen AI powered Data Analytics Job Simulation", issuer: "TATA", url: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_695885c539ff7eaad955f779_1770137274914_completion_certificate.pdf?raw=1" },
 ];
 
 export const education = [
