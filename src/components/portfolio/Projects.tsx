@@ -76,7 +76,7 @@ export function Projects() {
                       Repository coming soon
                     </span>
                   )}
-                  {project.demo && (
+                  {project.demo ? (
                     <a
                       href={project.demo}
                       target="_blank"
@@ -86,6 +86,14 @@ export function Projects() {
                       <ExternalLink className="size-4" aria-hidden="true" />
                       Live Demo
                     </a>
+                  ) : (
+                    <span
+                      className="inline-flex cursor-not-allowed items-center gap-2 rounded-xl border border-dashed border-border bg-secondary/40 px-4 py-2.5 text-sm font-medium text-muted-foreground opacity-70"
+                      aria-disabled="true"
+                    >
+                      <Clock className="size-4" aria-hidden="true" />
+                      Coming Soon
+                    </span>
                   )}
                 </div>
               </div>
