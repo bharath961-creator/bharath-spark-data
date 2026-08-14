@@ -16,11 +16,11 @@ export const profile = {
   location: "India",
 };
 
-/** Replace with your real email address. */
-export const contactEmail = "bharathreddydasari@example.com";
+/** Contact email address. */
+export const contactEmail = "bharathreddy6874@gmail.com";
 
-/** Replace with your resume PDF URL (e.g. a Google Drive share link or /resume.pdf). */
-export const resumeUrl = "/resume.pdf";
+/** Resume PDF / Drive link. */
+export const resumeUrl = "https://drive.google.com/file/d/1nhpZL2ElJQfgrRgzKT_ls88jTtICWbZ2/view?usp=drivesdk";
 
 export const socials = {
   github: "https://github.com/bharath961-creator",
