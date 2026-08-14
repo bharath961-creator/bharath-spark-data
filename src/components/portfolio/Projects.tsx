@@ -24,7 +24,7 @@ export function Projects() {
           <Reveal
             key={project.title}
             delay={i * 90}
-            className={i === 0 ? "lg:col-span-2" : undefined}
+            className={i === 0 ? "lg:col-span-2" : ""}
           >
             <article className="surface-card group flex h-full flex-col overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40">
               <div className="relative aspect-16/9 overflow-hidden border-b border-border">
