@@ -64,7 +64,7 @@ export function Navbar() {
               {initials}
             </span>
             <span className="hidden font-display text-sm font-semibold tracking-tight sm:block">
-              {profile.name.split(" ")[0]} {profile.name.split(" ").at(-1)}
+              {profile.name}
             </span>
           </a>
 
