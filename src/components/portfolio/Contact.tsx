@@ -52,7 +52,7 @@ export function Contact() {
               {
                 label: "LinkedIn",
                 value: "bharath-reddy-dasari",
-                href: socialIn.linkedin,
+                href: socials.linkedin,
                 Icon: Linkedin,
               },
               { label: "GitHub", value: "bharath961-creator", href: socials.github, Icon: Github },
