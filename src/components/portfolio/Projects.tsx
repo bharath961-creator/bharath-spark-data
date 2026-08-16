@@ -4,11 +4,13 @@ import { projects } from "@/data/portfolio";
 import salesImg from "@/assets/project-sales.jpg";
 import churnImg from "@/assets/project-churn.jpg";
 import dashboardImg from "@/assets/project-dashboard.jpg";
+import studentImg from "@/assets/project-student.jpg";
 
 const images = {
   sales: salesImg,
   churn: churnImg,
   dashboard: dashboardImg,
+  student: studentImg,
 } as const;
 
 export function Projects() {

@@ -19,13 +19,17 @@ export const profile = {
 /** Contact email address. */
 export const contactEmail = "bharathreddy6874@gmail.com";
 
+/** Contact phone number. */
+export const contactPhone = "6305470656";
+
 /** Resume PDF / Drive link. */
 export const resumeUrl = "https://drive.google.com/file/d/1nhpZL2ElJQfgrRgzKT_ls88jTtICWbZ2/view?usp=drivesdk";
 
 export const socials = {
   github: "https://github.com/bharath961-creator",
-  linkedin: "https://www.linkedin.com/in/bharath-reddy-dasari-a1101434a",
+  linkedin: "http://www.linkedin.com/in/bharath-reddy-dasari-a1101434a",
   email: `mailto:${contactEmail}`,
+  phone: `tel:+91${contactPhone}`,
 };
 
 export const navLinks = [
@@ -75,7 +79,7 @@ export type Project = {
   tech: string[];
   github?: string;
   demo?: string;
-  image: "sales" | "churn" | "dashboard";
+  image: "sales" | "churn" | "dashboard" | "student";
   status?: "Coming Soon";
 };
 
@@ -94,6 +98,14 @@ export const projects: Project[] = [
       "Analyzed customer data to identify patterns associated with customer churn and explored factors that may influence customer retention.",
     tech: ["Python", "Pandas", "SQL", "Power BI", "Data Visualization"],
     image: "churn",
+  },
+  {
+    title: "Student Performance Analysis",
+    description:
+      "Explored student performance data to understand factors that influence academic outcomes. Cleaned and analyzed scores alongside demographic and study-habit variables, then visualized patterns and key drivers using Python libraries.",
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    github: "https://github.com/bharath961-creator/student-performance-analysis",
+    image: "student",
   },
   {
     title: "Business Performance Dashboard",
