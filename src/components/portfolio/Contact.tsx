@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal, Section } from "./Section";
-import { contactEmail, socials } from "@/data/portfolio";
+import { contactEmail, contactPhone, socials } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
 type Errors = { name?: string; email?: string; message?: string };
@@ -48,10 +48,11 @@ export function Contact() {
           <ul className="space-y-4">
             {[
               { label: "Email", value: contactEmail, href: socials.email, Icon: Mail },
+              { label: "Phone", value: `+91 ${contactPhone}`, href: socials.phone, Icon: Phone },
               {
                 label: "LinkedIn",
                 value: "bharath-reddy-dasari",
-                href: socials.linkedin,
+                href: socialIn.linkedin,
                 Icon: Linkedin,
               },
               { label: "GitHub", value: "bharath961-creator", href: socials.github, Icon: Github },
