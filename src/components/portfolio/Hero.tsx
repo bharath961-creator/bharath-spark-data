@@ -1,14 +1,66 @@
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { DataBackdrop } from "./DataBackdrop";
 import { profile, resumeUrl, socials } from "@/data/portfolio";
+import profilePhotoAsset from "@/assets/profile-photo.jpeg.asset.json";
+
+function HeroPhoto() {
+  return (
+    <div
+      className="animate-rise-in relative mx-auto w-56 sm:w-64 lg:w-[320px]"
+      style={{ animationDelay: "300ms" }}
+    >
+      {/* Organic blob shape behind the photo */}
+      <div
+        aria-hidden="true"
+        className="absolute -inset-8 -z-10 animate-float-soft"
+        style={{
+          borderRadius: "58% 42% 55% 45% / 45% 52% 48% 55%",
+          background:
+            "linear-gradient(150deg, color-mix(in oklab, var(--primary) 22%, transparent), color-mix(in oklab, oklch(0.45 0.1 240) 30%, transparent))",
+          filter: "blur(2px)",
+        }}
+      />
+
+      {/* Dotted particle pattern */}
+      <div
+        aria-hidden="true"
+        className="absolute -inset-12 -z-10 opacity-50"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, color-mix(in oklab, var(--primary) 45%, transparent) 1px, transparent 1.5px)",
+          backgroundSize: "18px 18px",
+          maskImage: "radial-gradient(circle at 50% 50%, black, transparent 72%)",
+          WebkitMaskImage: "radial-gradient(circle at 50% 50%, black, transparent 72%)",
+        }}
+      />
+
+      {/* Circular photo with glowing teal ring */}
+      <div className="relative aspect-square overflow-hidden rounded-full border-2 border-primary/60 shadow-[var(--shadow-glow)]">
+        <img
+          src={profilePhotoAsset.url}
+          alt={`${profile.name} profile photo`}
+          className="size-full object-cover object-top"
+          loading="eager"
+        />
+      </div>
+
+      {/* Cyan accent dot on the lower-right edge */}
+      <span
+        aria-hidden="true"
+        className="absolute right-[6%] bottom-[6%] size-3.5 rounded-full bg-primary shadow-[var(--shadow-glow)] animate-pulse-dot"
+      />
+    </div>
+  );
+}
 
 export function Hero() {
   return (
     <section id="home" className="relative isolate flex min-h-svh items-center overflow-hidden">
       <DataBackdrop />
 
-      <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-20 sm:px-8">
-        <div className="max-w-3xl">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-5 pt-32 pb-20 sm:px-8 lg:flex-row lg:items-center lg:gap-16">
+        <HeroPhoto />
+        <div className="max-w-3xl flex-1 text-center lg:text-left">
           <p
             className="glass animate-rise-in inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono text-[11px] tracking-[0.2em] text-primary uppercase"
             style={{ animationDelay: "60ms" }}
