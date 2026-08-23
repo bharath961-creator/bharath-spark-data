@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Clock } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Reveal, Section } from "./Section";
 import { projects } from "@/data/portfolio";
 import salesImg from "@/assets/project-sales.jpg";
@@ -39,12 +39,6 @@ export function Projects() {
                   className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-background/85 via-background/20 to-transparent" />
-                {project.status && (
-                  <span className="glass absolute top-4 right-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium text-primary">
-                    <Clock className="size-3.5" aria-hidden="true" />
-                    {project.status}
-                  </span>
-                )}
               </div>
 
               <div className="flex flex-1 flex-col p-6 sm:p-7">
@@ -73,11 +67,7 @@ export function Projects() {
                       <Github className="size-4" aria-hidden="true" />
                       GitHub
                     </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-2 rounded-xl border border-dashed border-border px-4 py-2.5 text-sm text-muted-foreground">
-                      Repository coming soon
-                    </span>
-                  )}
+                  ) : null}
                   {project.demo ? (
                     <a
                       href={project.demo}
@@ -88,15 +78,7 @@ export function Projects() {
                       <ExternalLink className="size-4" aria-hidden="true" />
                       Live Demo
                     </a>
-                  ) : (
-                    <span
-                      className="inline-flex cursor-not-allowed items-center gap-2 rounded-xl border border-dashed border-border bg-secondary/40 px-4 py-2.5 text-sm font-medium text-muted-foreground opacity-70"
-                      aria-disabled="true"
-                    >
-                      <Clock className="size-4" aria-hidden="true" />
-                      Coming Soon
-                    </span>
-                  )}
+                  ) : null}
                 </div>
               </div>
             </article>
