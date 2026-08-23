@@ -56,9 +56,7 @@ export function Navbar() {
             className="flex items-center gap-2.5 rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
           >
             <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-primary/60">
-              <img
-                src={profilePhotoAsset.url}
-                alt={`${profile.name} profile photo`}
+              <span className="font-bold text-cyan-400 text-lg">BR</span>
                 className="size-full object-cover object-top"
               />
             </span>
