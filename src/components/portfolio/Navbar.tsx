@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks, profile } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
+import profilePhotoAsset from "@/assets/profile-photo.jpeg.asset.json";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -60,8 +61,12 @@ export function Navbar() {
             href="#home"
             className="flex items-center gap-2.5 rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
           >
-            <span className="grid size-9 place-items-center rounded-xl bg-primary font-display text-sm font-bold text-primary-foreground">
-              {initials}
+            <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-primary/60">
+              <img
+                src={profilePhotoAsset.url}
+                alt={`${profile.name} profile photo`}
+                className="size-full object-cover object-top"
+              />
             </span>
             <span className="hidden font-display text-sm font-semibold tracking-tight sm:block">
               {profile.name}
