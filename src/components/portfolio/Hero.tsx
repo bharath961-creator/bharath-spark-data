@@ -6,7 +6,7 @@ import profilePhotoAsset from "@/assets/profile-photo.jpeg.asset.json";
 function HeroPhoto() {
   return (
     <div
-      className="animate-rise-in relative mx-auto w-56 sm:w-64 lg:w-[320px]"
+      className="animate-rise-in relative mx-auto w-56 sm:w-64 lg:order-2 lg:w-[320px]"
       style={{ animationDelay: "300ms" }}
     >
       {/* Organic blob shape behind the photo */}
@@ -104,7 +104,7 @@ export function Hero() {
           </p>
 
           <div
-            className="animate-rise-in mt-10 flex flex-wrap items-center gap-3"
+            className="animate-rise-in mt-10 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
             style={{ animationDelay: "460ms" }}
           >
             <a
@@ -125,7 +125,7 @@ export function Hero() {
           </div>
 
           <ul
-            className="animate-rise-in mt-10 flex items-center gap-3"
+            className="animate-rise-in mt-10 flex items-center justify-center gap-3 lg:justify-start"
             style={{ animationDelay: "520ms" }}
           >
             {[
