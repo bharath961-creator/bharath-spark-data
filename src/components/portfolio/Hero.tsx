@@ -41,8 +41,7 @@ function HeroPhoto() {
         <img
           src={profilePhoto}
           alt={`${profile.name} profile photo`}
-          className="size-full object-cover 
-          object-top"
+          className="size-full object-cover object-top"
           loading="eager"
         />
       </div>
