@@ -29,22 +29,24 @@ function HeroPhoto() {
           backgroundImage:
             "radial-gradient(circle, color-mix(in oklab, var(--primary) 45%, transparent) 1px, transparent 1.5px)",
           backgroundSize: "18px 18px",
-          maskImage: "radial-gradient(circle at 50% 50%, black, transparent 72%)",
-          WebkitMaskImage: "radial-gradient(circle at 50% 50%, black, transparent 72%)",
+          maskImage:
+            "radial-gradient(circle at 50% 50%, black, transparent 72%)",
+          WebkitMaskImage:
+            "radial-gradient(circle at 50% 50%, black, transparent 72%)",
         }}
       />
 
-      {/* Circular photo with glowing teal ring */}
+      {/* Profile photo */}
       <div className="relative aspect-square overflow-hidden rounded-full border-2 border-primary/60 shadow-[var(--shadow-glow)]">
-       <img
-         src={profilephoto}
-         alt={`${profile.name} profile photo`}
-         className="size-full object-cover object-top"
-         loading="eager"
+        <img
+          src={profilePhoto}
+          alt={`${profile.name} profile photo`}
+          className="size-full object-cover object-top"
+          loading="eager"
         />
       </div>
 
-      {/* Cyan accent dot on the lower-right edge */}
+      {/* Cyan accent dot */}
       <span
         aria-hidden="true"
         className="absolute right-[6%] bottom-[6%] size-3.5 rounded-full bg-primary shadow-[var(--shadow-glow)] animate-pulse-dot"
@@ -55,11 +57,15 @@ function HeroPhoto() {
 
 export function Hero() {
   return (
-    <section id="home" className="relative isolate flex min-h-svh items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative isolate flex min-h-svh items-center overflow-hidden"
+    >
       <DataBackdrop />
 
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-5 pt-32 pb-20 sm:px-8 lg:flex-row lg:items-center lg:gap-16">
         <HeroPhoto />
+
         <div className="max-w-3xl flex-1 text-center lg:text-left">
           <p
             className="glass animate-rise-in inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono text-[11px] tracking-[0.2em] text-primary uppercase"
@@ -96,6 +102,7 @@ export function Hero() {
           >
             {profile.tagline}
           </p>
+
           <p
             className="animate-rise-in mt-4 max-w-2xl leading-relaxed text-muted-foreground"
             style={{ animationDelay: "400ms" }}
@@ -114,6 +121,7 @@ export function Hero() {
               View My Projects
               <ArrowDown className="size-4" />
             </a>
+
             <a
               href={resumeUrl}
               download
