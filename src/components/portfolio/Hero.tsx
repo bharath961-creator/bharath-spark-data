@@ -1,7 +1,6 @@
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { DataBackdrop } from "./DataBackdrop";
 import { profile, resumeUrl, socials } from "@/data/portfolio";
-import profilePhotoAsset from "@/assets/profile-photo.jpeg.asset.json";
 
 function HeroPhoto() {
   return (
@@ -36,11 +35,11 @@ function HeroPhoto() {
 
       {/* Circular photo with glowing teal ring */}
       <div className="relative aspect-square overflow-hidden rounded-full border-2 border-primary/60 shadow-[var(--shadow-glow)]">
-        <img
-          src={profilePhotoAsset.url}
-          alt={`${profile.name} profile photo`}
-          className="size-full object-cover object-top"
-          loading="eager"
+       <img
+         src="/profil.jpeg"
+         alt={`${profile.name} profile photo`}
+         className="size-full object-cover object-top"
+         loading="eager"
         />
       </div>
 
