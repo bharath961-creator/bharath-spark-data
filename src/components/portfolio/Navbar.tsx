@@ -34,12 +34,6 @@ export function Navbar() {
     return () => io.disconnect();
   }, []);
 
-  const initials = profile.name
-    .split(" ")
-    .map((w) => w[0])
-    .slice(0, 2)
-    .join("");
-
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div
