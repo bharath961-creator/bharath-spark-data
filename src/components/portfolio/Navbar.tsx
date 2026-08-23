@@ -57,8 +57,6 @@ export function Navbar() {
           >
             <span className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-full border border-primary/60">
               <span className="font-bold text-cyan-400 text-lg">BR</span>
-                className="size-full object-cover object-top"
-              />
             </span>
             <span className="hidden font-display text-sm font-semibold tracking-tight sm:block">
               {profile.name}
