@@ -80,7 +80,6 @@ export type Project = {
   github?: string;
   demo?: string;
   image: "sales" | "churn" | "dashboard" | "student";
-  status?: "Coming Soon";
 };
 
 export const projects: Project[] = [
@@ -95,8 +94,9 @@ export const projects: Project[] = [
   {
     title: "Customer Churn Analysis",
     description:
-      "Analyzed customer data to identify patterns associated with customer churn and explored factors that may influence customer retention.",
+      "Analyzed customer data to identify patterns related to customer churn and explored factors that may influence customer retention.",
     tech: ["Python", "Pandas", "SQL", "Power BI", "Data Visualization"],
+    github: "https://github.com/bharath961-creator/customer-churn-analysis",
     image: "churn",
   },
   {
@@ -113,7 +113,6 @@ export const projects: Project[] = [
       "Interactive dashboard project focused on analyzing business KPIs, revenue trends, product performance and customer metrics.",
     tech: ["Power BI", "Excel", "SQL"],
     image: "dashboard",
-    status: "Coming Soon",
   },
 ];
 
